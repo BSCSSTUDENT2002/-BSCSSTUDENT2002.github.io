@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+  background-color: black;
+    display: grid;
+    place-items: center;
+}
+.op{
+  text-decoration: line-through;
+}
+h1{
+  text-align: center;
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  padding: auto;
+  padding-inline: 1rem;
+  margin-top: 20px;
+}
+button {
+  border-radius: 50%;
+  width: 1.7em;
+  height: 1.7rem;
+  background-color: transparent;
+  border: none;
+  background-color: gainsboro;
+}
+button:hover{
+  background-color: green;
+  cursor: pointer;
+  color: white;
+}
+.container{
+  border-radius: 3%;
+  margin-top: 2rem;
+  min-height: 25rem;
+  width: 20rem;
+  background-color: whitesmoke
+}
+li{
+  list-style: none;
+  cursor: pointer;
+  font-size:1.3rem;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+.content{
+  margin-top: 9%;
+
+}
+span{
+  margin-left: 6.5%;
+  font-size: larger;
+}
+input{
+  width: 80%;
+  height:2rem;
+  border: 2px solid grey;
+  outline: none;
+  margin-left: 1.3rem;
+  margin-bottom: 1rem;
+  border-radius: 500px;
+  padding: 4%;
+}
+input::placeholder{
+  font-weight: bold;
+}
+.remove:hover{
+  background-color: red
+}
+input:focus::placeholder{
+  opacity: 0;
+}
+.task{
+  display: flex;
+}
+input[type=checkbox] {
+  cursor: pointer;
+  margin-right: .5rem;
+}
+.checkbox-round:checked {
+  background-color: green;
+  opacity: 1;
+
+}
+li.task::before {
+  content: "";
+  position: absolute;
+  left: 38%;
+  height: 18px;
+  width: 33px; 
+  background-image: url(./unchk.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+ margin-top: 4px;
+ margin-left: 1rem;
+ margin-right: 2rem;
+}
+
+.hid{
+  width: 20.2px;
+  position: absolute;
+  left: 39%;
+  margin-top: 2.5PX;
+  margin-left: 1px;
+  transition: all;
+}
+
+
